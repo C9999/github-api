@@ -1,0 +1,97 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-12T14:55:48.806Z",
+    "end": "2023-04-12T14:55:49.119Z",
+    "duration": 313,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "db66a7c9-787c-401c-b6dd-65c74b248ea6",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "c2992b54-5254-4283-bf28-0506aafeec58",
+        "title": "API Github",
+        "fullFile": "/Users/c.henrique.de.araujo/Documents/CF/github-api/teste/teste.js",
+        "file": "/teste/teste.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Consultar todos os repositórios",
+            "fullTitle": "API Github Consultar todos os repositórios",
+            "timedOut": false,
+            "duration": 241,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(request_timeout);\nrequest(URL)\n  .get(PATH_ALL_REPOS)\n  .set(\"Content-Type\", \"application/json\")\n  .end(function (err, res) {\n    // expect(res.status).to.be.eql(200);\n    done(err);\n  });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "31d0fdab-b707-4651-b5c7-e544493e248d",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Consultar repositório Appium",
+            "fullTitle": "API Github Consultar repositório Appium",
+            "timedOut": false,
+            "duration": 67,
+            "state": "passed",
+            "speed": "medium",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(request_timeout);\nrequest(URL)\n  .get(PATH_REPO_APPIUM)\n  .set(\"Content-Type\", \"application/json\")\n  .end(function (err, res) {\n    console.log(res.body)\n    // console.log(JSON.parse(res.body))\n    // expect(res.status).to.be.eql(200);\n    done(err);\n  });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "7a9d0637-8689-4e1f-8e88-dac7be1cbe54",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "31d0fdab-b707-4651-b5c7-e544493e248d",
+          "7a9d0637-8689-4e1f-8e88-dac7be1cbe54"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 308,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2023
+}
