@@ -4,10 +4,10 @@
   "description": "Teste de API e Contratos Github",
   "main": "contract_testing.js",
   "scripts": {
-    "all": "NODE_ENV=https://api.github.com/ mocha teste/*.js --reporter mochawesome",
-    "teste": "NODE_ENV=https://api.github.com/ mocha teste/teste.js --reporter mochawesome"
+    "all": "NODE_ENV=https://api.github.com mocha teste/*.js --reporter mochawesome",
+    "teste": "NODE_ENV=https://api.github.com mocha teste/teste.js --reporter mochawesome"
   },
-  "author": "Carlos Araújo",
+  "author": "Carlos Araï¿½jo",
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^7.6.0",

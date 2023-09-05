@@ -1,23 +1,97 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2023-04-12T18:22:28.301Z",
-    "end": "2023-04-12T18:22:28.301Z",
-    "duration": 0,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2023-09-05T20:49:17.264Z",
+    "end": "2023-09-05T20:49:17.422Z",
+    "duration": 158,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
     "passPercentClass": "success",
-    "pendingPercentClass": "success"
+    "pendingPercentClass": "danger"
   },
-  "suites": false,
+  "suites": {
+    "uuid": "ad8c7fff-1b15-41d8-b9d2-c5bac22b6b0d",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "895e014e-503c-45fb-b2d9-6cbfb7dccd10",
+        "title": "API Github",
+        "fullFile": "/Users/c.henrique.de.araujo/Documents/CarFleet/github-api/teste/teste.js",
+        "file": "/teste/teste.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Consultar todos os repositórios",
+            "fullTitle": "API Github Consultar todos os repositórios",
+            "timedOut": false,
+            "duration": 90,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(request_timeout);\nrequest(URL)\n  .get(PATH_ALL_REPOS)\n  .set(\"Content-Type\", \"application/json\")\n  .end(function (err, res) {\n    console.log(res.body.message)\n    done(err);\n  });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "89ff7c37-536a-4f30-b7e9-b78658a7267e",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Consultar repositório Appium",
+            "fullTitle": "API Github Consultar repositório Appium",
+            "timedOut": false,
+            "duration": 65,
+            "state": "passed",
+            "speed": "medium",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(request_timeout);\nrequest(URL)\n  .get(PATH_REPO_APPIUM)\n  .set(\"Content-Type\", \"application/json\")\n  .end(function (err, res) {\n    console.log(res.body.documentation_url)\n    done(err);\n  });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "99623325-3d65-423e-9d90-ce7a87ee346a",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "89ff7c37-536a-4f30-b7e9-b78658a7267e",
+          "99623325-3d65-423e-9d90-ce7a87ee346a"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 155,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
   "copyrightYear": 2023
 }
